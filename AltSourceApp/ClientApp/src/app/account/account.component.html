@@ -1,0 +1,39 @@
+
+<h3>Welcome {{account.firstName}} {{account.lastName}}</h3>
+<small>Account Balance: </small> {{account.balance | currency}}
+
+<form style="margin-top:20px;" [formGroup]="depositForm" (ngSubmit)="depositSubmit()">
+  <div class="form-group">
+    <label for="depositAmount">Deposit</label>
+    <div class="input-group" style="max-width: 300px;">
+      <input #depositAmount type="number" min="0" step=".01" class="form-control" name="depositAmount" id="depositAmount" formControlName="depositAmount" placeholder="Amount" />
+      <span class="input-group-btn"><button type="submit" class="btn btn-success">Deposit</button></span>
+    </div>
+  </div>
+</form>
+
+<form [formGroup]="withdrawlForm" (ngSubmit)="withdrawlSubmit()">
+  <div class="form-group">
+    <label for="withdrawlAmount">Withdrawl</label>
+    <div class="input-group" style="max-width: 300px;">
+      <input #withdrawlAmount type="number" min="0" step=".01" class="form-control" name="withdrawlAmount" id="withdrawlAmount" formControlName="withdrawlAmount" placeholder="Amount" />
+      <span class="input-group-btn"><button type="submit" class="btn btn-primary">Withdrawl</button></span>
+    </div>
+  </div>
+</form>
+
+<h3>Transactions</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Amount</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of account.transactionHistory; index as i; first as isFirst">
+      <td>{{transaction.amount | currency}}</td>
+      <td>{{transaction.dateTime | date: "short"}}</td>
+    </tr>
+  </tbody>
+</table>

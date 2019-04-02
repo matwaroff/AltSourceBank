@@ -1,0 +1,63 @@
+[
+  {
+    "id": 0,
+    "firstName": "Mathew",
+    "lastName": "Waroff",
+    "username": "mwaroff",
+    "passwordHash": "126444502B02ABCD357EDFF50333AE91703E2D3F9BAD459C5C2EC4279954066E",
+    "lastLogin": null,
+    "creationDate": null,
+    "authToken": "9323a300-ad29-4b45-a757-e2e099cdb4c3",
+    "balance": 106.99,
+    "transactionHistory": [
+      {
+        "amount": 20.0,
+        "dateTime": "2019-04-01T20:01:02.3119325-04:00"
+      },
+      {
+        "amount": -0.01,
+        "dateTime": "2019-04-01T20:00:57.7985966-04:00"
+      },
+      {
+        "amount": 0.0,
+        "dateTime": "2019-04-01T19:59:22.7076434-04:00"
+      },
+      {
+        "amount": 0.0,
+        "dateTime": "2019-04-01T19:56:21.2329956-04:00"
+      },
+      {
+        "amount": -10.0,
+        "dateTime": "2019-04-01T19:41:39.5465266-04:00"
+      },
+      {
+        "amount": -50.0,
+        "dateTime": "2019-04-01T19:32:49.6812997-04:00"
+      },
+      {
+        "amount": 10.0,
+        "dateTime": "2019-04-01T19:32:23.1473047-04:00"
+      }
+    ]
+  },
+  {
+    "creationDate": "2019-04-01T19:47:04.7978725-04:00",
+    "id": "8e2cb12f-aa74-4c14-95ef-0422a2973a8c",
+    "passwordHash": "5E884898DA28047151D0E56F8DC6292773603D0D6AABBDD62A11EF721D1542D8",
+    "username": "admin",
+    "firstName": "Test",
+    "lastName": "Account",
+    "balance": 1010000.0,
+    "authToken": "c07ba36c-cc80-47e2-92db-7135d8dc9ebb",
+    "transactionHistory": [
+      {
+        "amount": -20.0,
+        "dateTime": "2019-04-01T19:47:48.8683488-04:00"
+      },
+      {
+        "amount":1010020.0,
+        "dateTime": "2019-04-01T19:47:42.5236066-04:00"
+      }
+    ]
+  }
+]
