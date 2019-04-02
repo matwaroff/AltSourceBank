@@ -8,6 +8,8 @@ Welcome to my single-page application to handle authentication and account trans
 
 Accounts are securely saved in a JSON file on the server, passwords encoded with SHA256\. The angular app uses services to communicate with the backend API and update the UI.
 
+To start, open the project in Visual Studio and start in debug or production. (npm should be installed on the system)
+
 **This app should serve to achieve the following goals:**
 
 1.  Create a new account
